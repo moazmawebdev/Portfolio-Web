@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About — Moazma Asghar</title>
+<meta name="description" content="Moazma Asghar's background, development approach and the tools she uses to build responsive websites.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="grain" aria-hidden="true"></div>
+
+<header class="nav" id="siteNav">
+  <div class="nav__inner">
+    <a href="index.html" class="nav__brand">MOAZMA</a>
+    <nav class="nav__links">
+      <a href="index.html" data-nav>Home</a>
+      <a href="work.html" data-nav>Work</a>
+      <a href="about.html" data-nav class="is-active">About</a>
+      <a href="services.html" data-nav>Services</a>
+      <a href="contact.html" data-nav>Contact</a>
+    </nav>
+    <div class="nav__actions">
+      <a href="contact.html" class="btn btn--dark btn--sm">Let's Talk →</a>
+      <button class="nav__burger" id="navBurger" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+
+<div class="mobile-menu" id="mobileMenu">
+  <nav>
+    <a href="index.html" data-nav>Home</a>
+    <a href="work.html" data-nav>Work</a>
+    <a href="about.html" data-nav class="is-active">About</a>
+    <a href="services.html" data-nav>Services</a>
+    <a href="contact.html" data-nav>Contact</a>
+  </nav>
+</div>
+
+<main>
+
+  <section class="about-hero">
+    <div>
+      <p class="eyebrow reveal">About</p>
+      <h1 class="section-title reveal">Building my craft, <em>one project</em> at a time.</h1>
+    </div>
+    <p class="section-desc reveal">I'm not going to pretend I've got years of client work behind me — I don't, yet. What I do have is a habit of finishing what I start, and a growing set of complete, real projects to show for it.</p>
+  </section>
+
+  <div class="about-body">
+    <!-- Replace with your own photo. Recommended path:
+         assets/img/about/portrait.jpg -->
+    <div class="about-body__media reveal" data-parallax="0.1">
+      <img src="images/about.jpg" alt="Portrait of Moazma Asghar">
+    </div>
+
+    <div class="about-body__content">
+      <p class="reveal">
+        I'm Moazma, a frontend developer focused on HTML, CSS and vanilla JavaScript. I got into
+        development because I liked the idea of building something a person could actually open
+        and use — not just a design in a file, but a real page that works in a browser.
+      </p>
+      <p class="reveal">
+        I don't have professional client experience yet, so instead of padding this page with
+        claims I can't back up, I'd rather let the work speak for itself: four complete websites,
+        each built to solve a real brief — a real estate listing page, a restaurant site, a
+        skincare brand and a fitness studio.
+      </p>
+
+      <h3 class="reveal">My Approach</h3>
+      <ul class="approach-list">
+        <li class="reveal">
+          <span class="approach-list__num">01</span>
+          <div>
+            <h4>Start with structure</h4>
+            <p>Semantic HTML first — the right element for the right job, before a single line of CSS.</p>
+          </div>
+        </li>
+        <li class="reveal">
+          <span class="approach-list__num">02</span>
+          <div>
+            <h4>Design in the browser</h4>
+            <p>I build layouts responsively from the start, testing from small screens up rather than shrinking a desktop design down.</p>
+          </div>
+        </li>
+        <li class="reveal">
+          <span class="approach-list__num">03</span>
+          <div>
+            <h4>Add motion with intent</h4>
+            <p>JavaScript goes in last, and only where it genuinely improves the experience — never just to prove it can.</p>
+          </div>
+        </li>
+        <li class="reveal">
+          <span class="approach-list__num">04</span>
+          <div>
+            <h4>Check it everywhere</h4>
+            <p>Every project gets tested across screen sizes, keyboard navigation and reduced-motion settings before I call it done.</p>
+          </div>
+        </li>
+      </ul>
+
+      <h3 class="reveal">Tools I Use</h3>
+      <div class="tool-grid">
+        <div class="tool-chip reveal"><span></span>HTML5</div>
+        <div class="tool-chip reveal"><span></span>CSS3</div>
+        <div class="tool-chip reveal"><span></span>JavaScript</div>
+        <div class="tool-chip reveal"><span></span>Git &amp; GitHub</div>
+        <div class="tool-chip reveal"><span></span>Figma</div>
+        <div class="tool-chip reveal"><span></span>VS Code</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="cta-band reveal">
+    <p class="cta-band__text">Curious what I could build for you?</p>
+    <a href="work.html" class="btn btn--dark btn--lg">See The Work →</a>
+  </div>
+
+</main>
+
+<footer class="footer">
+  <div class="footer__top">
+    <div class="footer__brand">
+      <a href="index.html" class="nav__brand">MOAZMA</a>
+      <p>Frontend developer building clean, responsive interfaces with HTML, CSS and JavaScript.</p>
+    </div>
+    <div class="footer__col">
+      <h4>Sitemap</h4>
+      <a href="index.html">Home</a>
+      <a href="work.html">Work</a>
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="contact.html">Contact</a>
+    </div>
+    <div class="footer__col">
+      <h4>Connect</h4>
+      <a href="https://github.com/moazmawebdev" target="_blank" rel="noopener noreferrer">GitHub</a>
+      <a href="https://www.linkedin.com/in/moazmawebdev/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+      <a href="mailto:moazmawebdev@gmail.com" target="_blank" rel="noopener noreferrer">Email</a>
+    </div>
+  </div>
+  <div class="footer__bottom">
+    <span>© 2026 Moazma Asghar. All rights reserved.</span>
+    <span>Built with HTML, CSS &amp; JavaScript.</span>
+  </div>
+</footer>
+
+<!-- Replace 92XXXXXXXXXX with your real WhatsApp number, country code first, no + or spaces -->
+<a href="https://wa.me/923052177831?text=Hi%20Moazma%2C%20I%27d%20like%20to%20talk%20about%20a%20project." class="whatsapp-float" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+  <svg width="26" height="26" viewBox="0 0 24 24" fill="currentColor"><path d="M17.6 6.32A7.85 7.85 0 0 0 12.05 4a7.94 7.94 0 0 0-6.9 11.9L4 20l4.2-1.1a7.9 7.9 0 0 0 3.85 1h.01a7.94 7.94 0 0 0 5.54-13.58zM12.06 18.4h-.01a6.58 6.58 0 0 1-3.36-.92l-.24-.14-2.5.66.67-2.44-.16-.25a6.6 6.6 0 1 1 12.24-3.5 6.56 6.56 0 0 1-6.64 6.59zm3.6-4.94c-.2-.1-1.17-.58-1.35-.64-.18-.07-.31-.1-.44.1-.13.19-.5.64-.62.78-.11.13-.23.15-.42.05a5.4 5.4 0 0 1-1.6-.99 6 6 0 0 1-1.1-1.37c-.12-.2-.01-.3.09-.4.09-.09.2-.23.3-.35.1-.11.13-.19.2-.32.06-.13.03-.24-.02-.34-.05-.1-.44-1.06-.6-1.45-.16-.38-.32-.33-.44-.33h-.38c-.13 0-.34.05-.52.24-.18.19-.68.66-.68 1.62s.7 1.88.8 2.01c.1.13 1.38 2.11 3.36 2.96.47.2.83.32 1.12.41.47.15.9.13 1.24.08.38-.06 1.17-.48 1.33-.94.16-.46.16-.86.11-.94-.05-.08-.18-.13-.38-.23z"/></svg>
+</a>
+<script src="script.js"></script>
+</body>
+</html>

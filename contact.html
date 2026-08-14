@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact — Moazma Asghar</title>
+<meta name="description" content="Get in touch with Moazma Asghar about a frontend development project.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="grain" aria-hidden="true"></div>
+
+<header class="nav" id="siteNav">
+  <div class="nav__inner">
+    <a href="index.html" class="nav__brand">MOAZMA</a>
+    <nav class="nav__links">
+      <a href="index.html" data-nav>Home</a>
+      <a href="work.html" data-nav>Work</a>
+      <a href="about.html" data-nav>About</a>
+      <a href="services.html" data-nav>Services</a>
+      <a href="contact.html" data-nav class="is-active">Contact</a>
+    </nav>
+    <div class="nav__actions">
+      <a href="contact.html" class="btn btn--dark btn--sm">Let's Talk →</a>
+      <button class="nav__burger" id="navBurger" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+
+<div class="mobile-menu" id="mobileMenu">
+  <nav>
+    <a href="index.html" data-nav>Home</a>
+    <a href="work.html" data-nav>Work</a>
+    <a href="about.html" data-nav>About</a>
+    <a href="services.html" data-nav>Services</a>
+    <a href="contact.html" data-nav class="is-active">Contact</a>
+  </nav>
+</div>
+
+<main>
+
+  <section class="contact-hero">
+    <p class="eyebrow reveal" style="justify-content:center;">Contact</p>
+    <h1 class="section-title reveal">Let's build something <em>together.</em></h1>
+    <p class="section-desc reveal">Tell me a bit about your project — I read every message and reply personally.</p>
+  </section>
+
+  <div class="contact-body">
+    <div class="contact-info">
+      <div class="contact-info__item reveal">
+        <span class="contact-availability"><span></span>Available for freelance work</span>
+      </div>
+      <div class="contact-info__item reveal">
+        <h4>Prefer WhatsApp?</h4>
+        <!-- Replace 92XXXXXXXXXX with your real WhatsApp number -->
+        <a href="https://wa.me/923052177831?text=Hi%20Moazma%2C%20I%27d%20like%20to%20talk%20about%20a%20project." class="btn btn--whatsapp btn--sm" target="_blank" rel="noopener">
+          <span>Message on WhatsApp</span>
+        </a>
+      </div>
+      <div class="contact-info__item reveal">
+        <h4>Email</h4>
+        <a href="mailto:moazmawebdev@gmail.com">moazmawebdev@gmail.com</a>
+      </div>
+      <div class="contact-info__item reveal">
+        <h4>Elsewhere</h4>
+        <p><a href="https://github.com/moazmawebdev" target="_blank" rel="noopener noreferrer" >GitHub</a> &nbsp;·&nbsp; <a href="https://www.linkedin.com/in/moazmawebdev/" target="_blank" rel="noopener noreferrer" >LinkedIn</a>  &nbsp;·&nbsp; <a href="https://www.instagram.com/moazma.webdev/" target="_blank" rel="noopener noreferrer" >Instagram</a></p>
+      </div>
+      <div class="contact-info__item reveal">
+        <h4>Response Time</h4>
+        <p>Usually within 1–2 days.</p>
+      </div>
+    </div>
+
+    <!-- This form validates client-side only — it isn't wired up to
+         an inbox yet. Connect it to a form service such as Formspree
+         or EmailJS (or your own backend) to actually receive
+         submissions; see script.js for where the submit handler is. -->
+    <form class="contact-form reveal" id="contactForm" action="https://formspree.io/f/xeajzgyp" method="POST" novalidate>
+      <div class="form-row">
+        <div class="form-field">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" required>
+          <span class="form-error" aria-live="polite"></span>
+        </div>
+        <div class="form-field">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required>
+          <span class="form-error" aria-live="polite"></span>
+        </div>
+      </div>
+
+      <div class="form-field">
+        <label for="project">Project Type</label>
+        <input type="text" id="project" name="project" placeholder="Landing page, full website, etc.">
+      </div>
+
+      <div class="form-field">
+        <label for="message">Message</label>
+        <textarea id="message" name="message" required></textarea>
+        <span class="form-error" aria-live="polite"></span>
+      </div>
+
+      <button type="submit" class="btn btn--dark btn--lg contact-form__submit">Send Message</button>
+      <p class="form-status" id="formStatus" aria-live="polite"></p>
+    </form>
+  </div>
+
+</main>
+
+<footer class="footer">
+  <div class="footer__top">
+    <div class="footer__brand">
+      <a href="index.html" class="nav__brand">MOAZMA</a>
+      <p>Frontend developer building clean, responsive interfaces with HTML, CSS and JavaScript.</p>
+    </div>
+    <div class="footer__col">
+      <h4>Sitemap</h4>
+      <a href="index.html">Home</a>
+      <a href="work.html">Work</a>
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="contact.html">Contact</a>
+    </div>
+    <div class="footer__col">
+      <h4>Connect</h4>
+      <a href="https://github.com/moazmawebdev" target="_blank" rel="noopener noreferrer">GitHub</a>
+      <a href="https://www.linkedin.com/in/moazmawebdev/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+      <a href="mailto:moazmawebdev@gmail.com">Email</a>
+    </div>
+  </div>
+  <div class="footer__bottom">
+    <span>© 2026 Moazma Asghar. All rights reserved.</span>
+    <span>Built with HTML, CSS &amp; JavaScript.</span>
+  </div>
+</footer>
+
+<!-- Replace 92XXXXXXXXXX with your real WhatsApp number, country code first, no + or spaces -->
+<a href="https://wa.me/923052177831?text=Hi%20Moazma%2C%20I%27d%20like%20to%20talk%20about%20a%20project." class="whatsapp-float" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+  <svg width="26" height="26" viewBox="0 0 24 24" fill="currentColor"><path d="M17.6 6.32A7.85 7.85 0 0 0 12.05 4a7.94 7.94 0 0 0-6.9 11.9L4 20l4.2-1.1a7.9 7.9 0 0 0 3.85 1h.01a7.94 7.94 0 0 0 5.54-13.58zM12.06 18.4h-.01a6.58 6.58 0 0 1-3.36-.92l-.24-.14-2.5.66.67-2.44-.16-.25a6.6 6.6 0 1 1 12.24-3.5 6.56 6.56 0 0 1-6.64 6.59zm3.6-4.94c-.2-.1-1.17-.58-1.35-.64-.18-.07-.31-.1-.44.1-.13.19-.5.64-.62.78-.11.13-.23.15-.42.05a5.4 5.4 0 0 1-1.6-.99 6 6 0 0 1-1.1-1.37c-.12-.2-.01-.3.09-.4.09-.09.2-.23.3-.35.1-.11.13-.19.2-.32.06-.13.03-.24-.02-.34-.05-.1-.44-1.06-.6-1.45-.16-.38-.32-.33-.44-.33h-.38c-.13 0-.34.05-.52.24-.18.19-.68.66-.68 1.62s.7 1.88.8 2.01c.1.13 1.38 2.11 3.36 2.96.47.2.83.32 1.12.41.47.15.9.13 1.24.08.38-.06 1.17-.48 1.33-.94.16-.46.16-.86.11-.94-.05-.08-.18-.13-.38-.23z"/></svg>
+</a>
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Moazma Asghar — Frontend Developer</title>
+<meta name="description" content="Moazma Asghar is a frontend developer building responsive websites and landing pages with HTML, CSS and vanilla JavaScript.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="grain" aria-hidden="true"></div>
+
+<!-- ================= NAV ================= -->
+<header class="nav" id="siteNav">
+  <div class="nav__inner">
+    <a href="index.html" class="nav__brand">MOAZMA</a>
+    <nav class="nav__links">
+      <a href="index.html" data-nav class="is-active">Home</a>
+      <a href="work.html" data-nav>Work</a>
+      <a href="about.html" data-nav>About</a>
+      <a href="services.html" data-nav>Services</a>
+      <a href="contact.html" data-nav>Contact</a>
+    </nav>
+    <div class="nav__actions">
+      <a href="contact.html" class="btn btn--dark btn--sm">Let's Talk →</a>
+      <button class="nav__burger" id="navBurger" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+
+<div class="mobile-menu" id="mobileMenu">
+  <nav>
+    <a href="index.html" data-nav class="is-active">Home</a>
+    <a href="work.html" data-nav>Work</a>
+    <a href="about.html" data-nav>About</a>
+    <a href="services.html" data-nav>Services</a>
+    <a href="contact.html" data-nav>Contact</a>
+  </nav>
+</div>
+
+<main>
+
+  <!-- ================= HERO ================= -->
+  <section class="hero" id="hero">
+    <div class="hero__inner">
+      <div class="hero__copy">
+        <p class="eyebrow reveal">Frontend Developer</p>
+        <h1 class="hero__title reveal">Crafting digital <em>experiences</em> that feel intentional.</h1>
+        <p class="hero__sub reveal">
+          I design and build responsive websites and landing pages using HTML, CSS and vanilla
+          JavaScript — clean code, thoughtful interfaces, no shortcuts.
+        </p>
+        <div class="hero__cta reveal">
+          <a href="work.html" class="btn btn--dark btn--lg">
+            <span>View My Work</span>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </a>
+          <a href="contact.html" class="btn btn--outline btn--lg">Get In Touch</a>
+        </div>
+        <p class="hero__note reveal">Currently building complete, real-world projects — from real estate to fitness — to sharpen every part of the frontend craft.</p>
+      </div>
+
+      <!-- ================= PROJECT SHELF (hero visual) =================
+           Replace each image src below with a full-page screenshot of
+           the matching project. Recommended path structure:
+           assets/img/hero/real-estate-full.jpg
+           assets/img/hero/gym-full.jpg
+           assets/img/hero/skincare-full.jpg
+           A full-page screenshot (e.g. via the browser's "Capture full
+           size screenshot" devtools option, or an extension like
+           GoFullPage) works best — the script scrolls through it
+           automatically once the image loads. -->
+      <div class="hero__visual reveal">
+        <div class="pshelf" id="pshelf">
+          <div class="pshelf__glow" id="pshelfGlow" aria-hidden="true"></div>
+          <div class="pshelf__group" id="pshelfGroup">
+
+            <div class="pshelf__panel pshelf__panel--1">
+              <div class="pshelf__viewport">
+                <div class="pshelf__scroll" data-duration="5200" data-delay="0">
+                  <img src="images/restaurant-landing-page.png" alt="Real Estate website — full page preview">
+                </div>
+              </div>
+              <div class="pshelf__label"><span></span>Restaurant</div>
+            </div>
+
+            <div class="pshelf__panel pshelf__panel--2">
+              <div class="pshelf__viewport">
+                <div class="pshelf__scroll" data-duration="6500" data-delay="700">
+                  <img src="images/real-estate-landing-page.png" alt="Real Estate website — full page preview">
+                </div>
+              </div>
+              <div class="pshelf__label"><span></span>Real Estate</div>
+            </div>
+
+            <div class="pshelf__panel pshelf__panel--3">
+              <div class="pshelf__viewport">
+                <div class="pshelf__scroll" data-duration="7800" data-delay="1400">
+                  <img src="images/skincare-landing-page.png" alt="Skincare website — full page preview">
+                </div>
+              </div>
+              <div class="pshelf__label"><span></span>Skincare</div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= QUOTE ================= -->
+  <section class="quote">
+    <div class="quote__inner">
+      <span class="quote__mark" aria-hidden="true">"</span>
+      <div>
+        <p class="quote__text reveal">Good interfaces don't demand attention. They <em>earn it</em>, one honest detail at a time.</p>
+        <p class="quote__cite reveal">— Moazma Asghar</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= ABOUT PREVIEW ================= -->
+  <section class="about-preview">
+    <div class="about-preview__media reveal" data-parallax="0.12">
+      <!-- Replace with your own photo -->
+      <img src="images/about.jpg" alt="Portrait of Moazma Asghar">
+      <div class="about-preview__frame" aria-hidden="true"></div>
+    </div>
+
+    <div class="about-preview__body">
+      <p class="eyebrow reveal">About Me</p>
+      <h2 class="section-title reveal">I'm Moazma, a frontend developer who cares about <em>the details.</em></h2>
+      <p class="reveal">
+        I'm early in my career, but I take every project seriously — writing clean, semantic
+        code and building interfaces that are as functional as they are beautiful.
+      </p>
+      <p class="reveal">
+        Right now, that means sharpening my HTML, CSS and JavaScript fundamentals through real,
+        complete builds rather than tutorials — the four projects on this site are the result.
+      </p>
+      <a href="about.html" class="link-arrow reveal">
+        More About Me
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+      </a>
+    </div>
+
+    <div class="about-preview__badges">
+      <div class="badge reveal">
+        <span class="badge__num">4</span>
+        <span class="badge__label">Projects Built</span>
+      </div>
+      <div class="badge reveal">
+        <span class="badge__num">Vanilla</span>
+        <span class="badge__label">HTML · CSS · JavaScript, No Frameworks</span>
+      </div>
+      <div class="badge reveal">
+        <span class="badge__num">Open</span>
+        <span class="badge__label">Available For Freelance Work</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= SERVICES PREVIEW ================= -->
+  <section class="services-preview">
+    <div class="services-preview__head">
+      <p class="eyebrow reveal">What I Do</p>
+      <h2 class="section-title reveal">Four ways I can help <em>build</em> your site.</h2>
+      <p class="section-desc reveal">Every project is built by hand — semantic HTML, considered CSS and just enough JavaScript to make it feel alive.</p>
+    </div>
+
+    <div class="service-grid">
+      <article class="service-card reveal" data-tilt>
+        <div class="service-card__icon" aria-hidden="true">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="4" width="18" height="14" rx="2"/><path d="M8 21h8M12 18v3"/></svg>
+        </div>
+        <h3>Landing Pages</h3>
+        <p>Fast, focused single pages built to convert — from concept to a polished, responsive build.</p>
+        <a href="services.html" class="link-arrow service-card__link">Learn more <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      </article>
+
+      <article class="service-card reveal" data-tilt>
+        <div class="service-card__icon" aria-hidden="true">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="3" width="7" height="7" rx="1.5"/><rect x="3" y="14" width="7" height="7" rx="1.5"/><rect x="14" y="14" width="7" height="7" rx="1.5"/></svg>
+        </div>
+        <h3>Full Websites</h3>
+        <p>Complete, multi-page websites — structured, accessible and built to grow with your content.</p>
+        <a href="services.html" class="link-arrow service-card__link">Learn more <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      </article>
+
+      <article class="service-card reveal" data-tilt>
+        <div class="service-card__icon" aria-hidden="true">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 12h18M3 6h18M3 18h12"/></svg>
+        </div>
+        <h3>Responsive Design</h3>
+        <p>Layouts tested from 360px to 1920px+, so the experience holds up on every device.</p>
+        <a href="services.html" class="link-arrow service-card__link">Learn more <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      </article>
+
+      <article class="service-card reveal" data-tilt>
+        <div class="service-card__icon" aria-hidden="true">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M8 9l-4 3 4 3M16 9l4 3-4 3M13 6l-2 12"/></svg>
+        </div>
+        <h3>JS Interactions</h3>
+        <p>Scroll reveals, hover states and micro-interactions — built in vanilla JavaScript, no dependencies.</p>
+        <a href="services.html" class="link-arrow service-card__link">Learn more <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      </article>
+    </div>
+  </section>
+
+  <!-- ================= CTA ================= -->
+  <div class="cta-band reveal">
+    <p class="cta-band__text">Have a project in mind? Let's build something clean and fast.</p>
+    <a href="contact.html" class="btn btn--dark btn--lg">Start a Project →</a>
+  </div>
+
+</main>
+
+<!-- ================= FOOTER ================= -->
+<footer class="footer">
+  <div class="footer__top">
+    <div class="footer__brand">
+      <a href="index.html" class="nav__brand">MOAZMA</a>
+      <p>Frontend developer building clean, responsive interfaces with HTML, CSS and JavaScript.</p>
+    </div>
+    <div class="footer__col">
+      <h4>Sitemap</h4>
+      <a href="index.html">Home</a>
+      <a href="work.html">Work</a>
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="contact.html">Contact</a>
+    </div>
+    <div class="footer__col">
+      <h4>Connect</h4>
+      <a href="https://github.com/moazmawebdev" target="_blank" rel="noopener noreferrer">
+    GitHub
+</a>
+
+<a href="https://www.linkedin.com/in/moazmawebdev/" target="_blank" rel="noopener noreferrer">
+    LinkedIn</a>
+<a href="mailto:maozmawevdev@gmail.com">
+    Email</a>
+    </div>
+    <!-- ============================================================
+     FOOTER CROSS-LINK — mentions the tech/SaaS portfolio
+     Insert this <div> between the closing </div> of .footer__top
+     and the opening <div class="footer__bottom"> in EVERY page's
+     footer (index.html, work.html, about.html, services.html,
+     contact.html) so it's visible site-wide.
+
+     Replace the href below with your real tech portfolio URL.
+     ============================================================ -->
+
+<div class="footer-crosslink">
+  <p class="footer-crosslink__text">Also building SaaS, B2B and cybersecurity landing pages.</p>
+  <a href="https://moazmawebdev.github.io/Portfolio-website/" class="footer-crosslink__link" id="footerCrosslink" target="_blank" rel="noopener">
+    <span class="footer-crosslink__link-inner">
+      View Tech Portfolio
+      <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+    </span>
+  </a>
+</div>
+
+<link rel="stylesheet" href="footer-crosslink.css">
+<script src="footer-crosslink.js" defer></script>
+  </div>
+  <div class="footer__bottom">
+    <span>© 2026 Moazma Asghar. All rights reserved.</span>
+    <span>Built with HTML, CSS &amp; JavaScript.</span>
+  </div>
+</footer>
+
+<!-- Replace 92XXXXXXXXXX with your real WhatsApp number, country code first, no + or spaces -->
+<a href="https://wa.me/923052177831?text=Hi%20Moazma%2C%20I%27d%20like%20to%20talk%20about%20a%20project." class="whatsapp-float" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+  <svg width="26" height="26" viewBox="0 0 24 24" fill="currentColor"><path d="M17.6 6.32A7.85 7.85 0 0 0 12.05 4a7.94 7.94 0 0 0-6.9 11.9L4 20l4.2-1.1a7.9 7.9 0 0 0 3.85 1h.01a7.94 7.94 0 0 0 5.54-13.58zM12.06 18.4h-.01a6.58 6.58 0 0 1-3.36-.92l-.24-.14-2.5.66.67-2.44-.16-.25a6.6 6.6 0 1 1 12.24-3.5 6.56 6.56 0 0 1-6.64 6.59zm3.6-4.94c-.2-.1-1.17-.58-1.35-.64-.18-.07-.31-.1-.44.1-.13.19-.5.64-.62.78-.11.13-.23.15-.42.05a5.4 5.4 0 0 1-1.6-.99 6 6 0 0 1-1.1-1.37c-.12-.2-.01-.3.09-.4.09-.09.2-.23.3-.35.1-.11.13-.19.2-.32.06-.13.03-.24-.02-.34-.05-.1-.44-1.06-.6-1.45-.16-.38-.32-.33-.44-.33h-.38c-.13 0-.34.05-.52.24-.18.19-.68.66-.68 1.62s.7 1.88.8 2.01c.1.13 1.38 2.11 3.36 2.96.47.2.83.32 1.12.41.47.15.9.13 1.24.08.38-.06 1.17-.48 1.33-.94.16-.46.16-.86.11-.94-.05-.08-.18-.13-.38-.23z"/></svg>
+</a>
+<script src="script.js"></script>
+</body>
+</html>
