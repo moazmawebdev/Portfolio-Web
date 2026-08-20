@@ -285,6 +285,15 @@ input,textarea{ font-family:inherit; }
 .service-card__list li::before{ content:''; width:5px; height:5px; border-radius:50%; background:var(--clay); flex-shrink:0; }
 .service-card__link{ margin-top:auto; padding-top:8px; }
 
+.service-card__price {
+  margin-top: 1rem;
+  padding-top: 0.75rem;
+  border-top: 1px solid rgba(0, 0, 0, 0.08);
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #1e2327;
+}
+
 /* ============================================================
    TECH PORTFOLIO BANNER — scoped styles (services.html only)
    A dark panel deliberately distinct from the cream service
