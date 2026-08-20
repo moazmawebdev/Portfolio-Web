@@ -541,6 +541,65 @@ input,textarea{ font-family:inherit; }
   .contact-body{ grid-template-columns:1fr; }
 }
 
+
+/* ===== Tablet & below (992px) ===== */
+@media (max-width: 992px) {
+  .hero__inner {
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .hero__visual {
+    width: 100%;
+  }
+  .about-preview {
+    flex-direction: column;
+  }
+  .about-body {
+    grid-template-columns: 1fr;
+  }
+  .service-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* ===== Small tablet (768px) ===== */
+@media (max-width: 768px) {
+  .nav__links {
+    display: none;
+  }
+  .nav__burger {
+    display: flex;
+  }
+  .hero__title {
+    font-size: 2rem;
+  }
+  .service-grid {
+    grid-template-columns: 1fr;
+  }
+  .footer__top {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+}
+
+/* ===== Mobile (576px and below) ===== */
+@media (max-width: 576px) {
+  .hero__cta {
+    flex-direction: column;
+    width: 100%;
+  }
+  .hero__cta a {
+    width: 100%;
+    text-align: center;
+  }
+  .pshelf {
+    flex-direction: column;
+  }
+  .about-preview__badges {
+    grid-template-columns: 1fr;
+  }
+}
+
 @media (max-width:860px){
   .nav__links{ display:none; }
   .nav__burger{ display:flex; }
