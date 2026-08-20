@@ -285,59 +285,6 @@ input,textarea{ font-family:inherit; }
 .service-card__list li::before{ content:''; width:5px; height:5px; border-radius:50%; background:var(--clay); flex-shrink:0; }
 .service-card__link{ margin-top:auto; padding-top:8px; }
 
-.service-card__price {
-  margin-top: 1rem;
-  padding-top: 0.75rem;
-  border-top: 1px solid rgba(0, 0, 0, 0.08);
-  font-size: 0.9rem;
-  font-weight: 600;
-  color: #1e2327;
-}
-
-/* ============================================================
-   TECH PORTFOLIO BANNER — scoped styles (services.html only)
-   A dark panel deliberately distinct from the cream service
-   cards around it, so it reads as "a different offering" rather
-   than a fifth service card. Uses existing tokens from style.css.
-   ============================================================ */
-
-.tech-banner{
-  position: relative;
-  max-width: var(--container);
-  margin: 20px auto 60px;
-  padding: 54px 44px;
-  border-radius: var(--radius-lg);
-  background: var(--charcoal);
-  overflow: hidden;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 36px;
-  flex-wrap: wrap;
-}
-
-.tech-banner__glow{
-  position: absolute; inset: -20%;
-  background: radial-gradient(420px circle at var(--tgx,20%) var(--tgy,40%), rgba(201,154,77,0.16), transparent 60%);
-  pointer-events: none;
-  transition: background .4s ease;
-}
-
-.tech-banner__body{ position: relative; z-index: 1; max-width: 560px; }
-.tech-banner__title{
-  font-family: var(--font-display); font-weight: 500; font-style: normal;
-  font-size: clamp(1.4rem, 2.6vw, 1.9rem); line-height: 1.2;
-  color: var(--cream); margin: 0 0 12px;
-}
-.tech-banner__desc{ font-size: 14.5px; line-height: 1.65; color: rgba(243,236,225,0.68); margin: 0; }
-
-.tech-banner__cta{ position: relative; z-index: 1; flex-shrink: 0; }
-.tech-banner__cta-inner{
-  display: inline-flex; align-items: center; gap: 9px;
-  transform: translate(0,0);   /* JS nudges this on hover ("magnetic" effect) */
-  transition: transform .2s var(--ease-out);
-}
-
 /* ============================================================
    CTA band
    ============================================================ */
@@ -459,59 +406,7 @@ input,textarea{ font-family:inherit; }
 .whatsapp-float:hover{ transform:translateY(-3px) scale(1.05); box-shadow:0 16px 34px -8px rgba(0,0,0,0.4); }
 @keyframes whatsapp-pulse{ 0%,100%{ box-shadow:0 0 0 0 rgba(37,211,102,0.35); } 50%{ box-shadow:0 0 0 10px rgba(37,211,102,0); } }
 .whatsapp-float{ animation:whatsapp-pulse 2.6s ease-out infinite; }
-
-/* ============================================================
-   FOOTER CROSS-LINK — scoped styles
-   Sits between .footer__top and .footer__bottom, full width,
-   inside the existing .footer (dark) container. Uses the same
-   --clay / --gold tokens already defined in style.css.
-   ============================================================ */
-
-.footer-crosslink{
-  max-width: var(--container);
-  margin: 0 auto;
-  padding: 26px 0;
-  border-top: 1px solid var(--line-dark);
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 16px;
-  flex-wrap: wrap;
-}
-
-.footer-crosslink__text{
-  margin: 0;
-  font-size: 13.5px;
-  color: rgba(243,236,225,0.68);
-}
-
-.footer-crosslink__link{
-  display: inline-block;
-  border: 1px solid rgba(243,236,225,0.25);
-  border-radius: 999px;
-  padding: 10px 18px;
-  font-size: 13px;
-  font-weight: 600;
-  color: var(--cream);
-  transition: border-color .3s ease, background .3s ease;
-}
-.footer-crosslink__link:hover{
-  border-color: var(--gold);
-  background: rgba(201,154,77,0.08);
-}
-
-.footer-crosslink__link-inner{
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  transform: translate(0,0);   /* JS nudges this on hover ("magnetic" effect) */
-  transition: transform .2s var(--ease-out);
-}
-.footer-crosslink__link-inner svg{ flex-shrink: 0; }
-
-@media (max-width: 640px){
-  .footer-crosslink{ flex-direction: column; align-items: flex-start; }
-}
+@media (max-width:640px){ .whatsapp-float{ right:16px; bottom:16px; width:50px; height:50px; } }
 
 /* Inline WhatsApp button used inside the Contact page info column */
 .btn--whatsapp{ background:#25D366; color:#fff; }
@@ -519,8 +414,9 @@ input,textarea{ font-family:inherit; }
 @media (max-width:1080px){
   .hero__inner{ grid-template-columns:1fr; text-align:center; gap:56px; }
   .hero__copy{ max-width:600px; margin:0 auto; }
+  .hero__sub{ margin-left:auto; margin-right:auto; }
+  .hero__note{ margin-left:auto; margin-right:auto; }
   .hero__cta{ justify-content:center; }
-  .hero__note{ margin:0 auto; }
 
   .about-preview{ grid-template-columns:1fr; text-align:center; }
   .about-preview__media{ max-width:360px; margin:0 auto; }
@@ -541,72 +437,34 @@ input,textarea{ font-family:inherit; }
   .contact-body{ grid-template-columns:1fr; }
 }
 
-
-/* ===== Tablet & below (992px) ===== */
-@media (max-width: 992px) {
-  .hero__inner {
-    flex-direction: column;
-    gap: 2rem;
-  }
-  .hero__visual {
-    width: 100%;
-  }
-  .about-preview {
-    flex-direction: column;
-  }
-  .about-body {
-    grid-template-columns: 1fr;
-  }
-  .service-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-/* ===== Small tablet (768px) ===== */
-@media (max-width: 768px) {
-  .nav__links {
-    display: none;
-  }
-  .nav__burger {
-    display: flex;
-  }
-  .hero__title {
-    font-size: 2rem;
-  }
-  .service-grid {
-    grid-template-columns: 1fr;
-  }
-  .footer__top {
-    flex-direction: column;
-    gap: 1.5rem;
-  }
-}
-
-/* ===== Mobile (576px and below) ===== */
-@media (max-width: 576px) {
-  .hero__cta {
-    flex-direction: column;
-    width: 100%;
-  }
-  .hero__cta a {
-    width: 100%;
-    text-align: center;
-  }
-  .pshelf {
-    flex-direction: column;
-  }
-  .about-preview__badges {
-    grid-template-columns: 1fr;
-  }
-}
-
 @media (max-width:860px){
   .nav__links{ display:none; }
   .nav__burger{ display:flex; }
   .nav .btn--sm{ display:none; }
   .quote__inner{ flex-direction:column; gap:16px; }
   .footer__top{ grid-template-columns:1fr 1fr; row-gap:36px; }
-  .tech-banner{ flex-direction: column; align-items: flex-start; padding: 40px 28px; }
+}
+
+/* ============================================================
+   Hero + Contact — dedicated 992px → 576px tuning
+   (small tablet / large phone range, between the 1080px
+   single-column switch and the 640px mobile refinements)
+   ============================================================ */
+@media (max-width:992px) and (min-width:576px){
+  .hero{ padding:100px 24px 50px; }
+  .hero__inner{ gap:44px; }
+  .hero__cta{ margin-bottom:28px; }
+
+  .pshelf{ height:480px; }
+  .pshelf__panel--1{ width:190px; height:260px; left:3%; top:8%; }
+  .pshelf__panel--2{ width:206px; height:284px; left:30%; top:24%; }
+  .pshelf__panel--3{ width:190px; height:260px; left:57%; top:4%; }
+
+  .contact-hero{ padding:130px 24px 24px; }
+  .contact-body{ gap:44px; padding:56px 24px 110px; }
+  .contact-info{ display:grid; grid-template-columns:1fr 1fr; gap:28px 24px; }
+  .contact-info__item{ min-width:0; }
+  .form-row{ grid-template-columns:1fr 1fr; gap:16px; }
 }
 
 @media (max-width:640px){
@@ -620,5 +478,4 @@ input,textarea{ font-family:inherit; }
   .form-row{ grid-template-columns:1fr; }
   .cta-band{ flex-direction:column; align-items:flex-start; }
   .tool-grid{ grid-template-columns:repeat(2,1fr); }
-  .whatsapp-float{ right:16px; bottom:16px; width:50px; height:50px; }
 }
